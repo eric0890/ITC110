@@ -13,7 +13,7 @@ def main():
     pi = 3.14
     
     #this equation converts the user inputs and combines it with the formula for area
-    areaprice = (pi * ((diameter / 2) ** 2) /(price*100))
+    areaprice = (pi * ((diameter / 2) ** 2) /(price))
     
     print("\nThe cost is", round(areaprice,3), "cents per square inch.")
 
