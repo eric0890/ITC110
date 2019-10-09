@@ -1,6 +1,6 @@
 #pizzaconverter.py
 #this file converts the price and size of a pizza into cost per square inch
-#note: I tested using 10" diameter and $8 which equals 78.5 square inches divided by 800 cents = 9.81 cents ppsi (rounded)
+#note: I tested using 10" diameter and $8 which equals 78.5 square inches divided by 800 cents = 9.82 (rounded)
 from math import pi
 
 def main():
