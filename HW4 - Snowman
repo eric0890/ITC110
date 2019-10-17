@@ -1,0 +1,229 @@
+#HW4.py
+#A program to Draw Snowman and Tree
+#By: Eric Ontiveros
+
+from graphics import *
+
+def main():
+
+    #Create window description
+    
+    win = GraphWin("Eric's Picture")
+    win.setCoords(0,0,1000,1000)
+    win.setBackground("aqua")
+
+    #top circle of snowman
+    center = Point(250, 650)
+    circ = Circle(center, 110)
+    circ.setFill("white")
+    circ.setOutline("white")
+    circ.draw(win)
+
+    #middle circle of snowman
+    center = Point(250, 450)
+    circ = Circle(center, 150)
+    circ.setFill("white")
+    circ.setOutline("white")
+    circ.draw(win)
+
+    #bottom circle of snowman
+    center = Point(250, 200)
+    circ = Circle(center, 200)
+    circ.setFill("white")
+    circ.setOutline("white")
+    circ.draw(win)
+
+    #snowman hat (tall)
+    hat = Rectangle(Point(200, 760),Point(300,870))
+    hat.setFill("black")
+    hat.draw(win)
+    
+    #snowman hat (wide)
+    hat2 = Rectangle(Point(140, 740),Point(360,770))
+    hat2.setFill("black")
+    hat2.draw(win)
+
+    #snowman top button 
+    center = Point(250, 520)
+    top = Circle(center, 15)
+    top.setFill("black")
+    top.setOutline("black")
+    top.draw(win)
+
+    #snowman buttons (clone)
+    middle = top.clone()
+    middle.move(0,-50)
+    middle.draw(win)
+    bottom = middle.clone()
+    bottom.move(0,-50)
+    bottom.draw(win)
+
+    #snowman left eye
+    center = Point(220, 685)
+    lefteye = Circle(center, 15)
+    lefteye.setFill("black")
+    lefteye.setOutline("black")
+    lefteye.draw(win)
+
+    #snowman right eye (clone)
+    righteye = lefteye.clone()
+    righteye.move(60,0)
+    righteye.draw(win)
+
+    #snowman bottom tooth
+    center = Point(250, 580)
+    tooth = Circle(center, 7.5)
+    tooth.setFill("black")
+    tooth.setOutline("black")
+    tooth.draw(win)
+
+    #snowman other teeth (clone)
+    tooth1 = tooth.clone()
+    tooth1.move(30,15)
+    tooth1.draw(win)
+    
+    tooth1 = tooth.clone()
+    tooth1.move(60,30)
+    tooth1.draw(win)
+
+    tooth1 = tooth.clone()
+    tooth1.move(-30,15)
+    tooth1.draw(win)
+
+    tooth1 = tooth.clone()
+    tooth1.move(-60,30)
+    tooth1.draw(win)
+
+    #snowman nose (bottom, top, right)
+    nose = Polygon(Point(250,625), Point(250,655), Point(285,640))
+    nose.setFill("orange")
+    nose.setOutline("orange")
+    nose.draw(win)
+
+    #tree trunk
+    trunk = Rectangle(Point(700,0), Point(800,150))
+    trunk.setFill("brown")
+    trunk.setOutline("brown")
+    trunk.draw(win)
+
+    #bottom branch (left, right, top)
+    branch1 = Polygon(Point(500,150), Point(1000,150), Point(750,350))
+    branch1.setFill("green")
+    branch1.setOutline("green")
+    branch1.draw(win)
+    
+    #bottom-middle branch (left, right, top)
+    branch2 = Polygon(Point(550,300), Point(950,300), Point(750,500))
+    branch2.setFill("green")
+    branch2.setOutline("green")
+    branch2.draw(win)
+
+    #middle branch (left, right, top)
+    branch3 = Polygon(Point(600,430), Point(900,430), Point(750,600))
+    branch3.setFill("green")
+    branch3.setOutline("green")
+    branch3.draw(win)
+
+    #top-middle branch (left, right, top)
+    branch4 = Polygon(Point(640,550), Point(860,550), Point(750,700))
+    branch4.setFill("green")
+    branch4.setOutline("green")
+    branch4.draw(win)
+    
+    #top branch (left, right, top)
+    branch5 = Polygon(Point(675,650), Point(825,650), Point(750,775))
+    branch5.setFill("green")
+    branch5.setOutline("green")
+    branch5.draw(win)
+
+    #tree topper star (starting with top and going clockwise)
+    star = Polygon(Point(750,850), Point(760,810), Point(800,800), Point(760,790),
+                   Point(750,750), Point(740,790), Point(700,800), Point(740,810))
+    star.setFill("yellow")
+    star.setOutline("yellow")
+    star.draw(win)
+
+    #top circle ornament on tree
+    center = Point(750, 700)
+    cornament = Circle(center, 15)
+    cornament.setFill("yellow")
+    cornament.setOutline("red")
+    cornament.draw(win)
+
+    #remaining circle ornaments (clones)
+    cornament2 = cornament.clone()
+    cornament2.move(-75,-150)
+    cornament2.draw(win)
+
+    cornament3 = cornament.clone()
+    cornament3.move(75,-150)
+    cornament3.draw(win)
+
+    cornament4 = cornament.clone()
+    cornament4.move(0,-250)
+    cornament4.draw(win)
+
+    cornament5 = cornament.clone()
+    cornament5.move(-75,-350)
+    cornament5.draw(win)
+
+    cornament6 = cornament.clone()
+    cornament6.move(75,-350)
+    cornament6.draw(win)
+    
+    cornament7 = cornament.clone()
+    cornament7.move(-170,-400)
+    cornament7.draw(win)
+
+    cornament8 = cornament.clone()
+    cornament8.move(170,-400)
+    cornament8.draw(win)
+
+    cornament9 = cornament.clone()
+    cornament9.move(0,-500)
+    cornament9.draw(win)
+
+    #top-left red square ornament on tree (Left, Right, Top, Bottom)
+    sornament = Polygon(Point(685,650),Point(715,650),Point(700,670),Point(700,630))
+    sornament.setFill("red")
+    sornament.setOutline("red")
+    sornament.draw(win)
+
+    #remaining sqaure ornaments (clones)
+    sornament2 = sornament.clone()
+    sornament2.move(100,0)
+    sornament2.draw(win)
+
+    sornament3 = sornament.clone()
+    sornament3.move(50,-75)
+    sornament3.draw(win)
+
+    sornament4 = sornament.clone()
+    sornament4.move(-50,-225)
+    sornament4.draw(win)
+
+    sornament5 = sornament.clone()
+    sornament5.move(150,-225)
+    sornament5.draw(win)
+
+    sornament6 = sornament.clone()
+    sornament6.move(50,-350)
+    sornament6.draw(win)
+
+    sornament7 = sornament.clone()
+    sornament7.move(-60,-400)
+    sornament7.draw(win)
+
+    sornament8 = sornament.clone()
+    sornament8.move(160,-400)
+    sornament8.draw(win)
+
+    sornament9 = sornament.clone()
+    sornament9.move(-150,-500)
+    sornament9.draw(win)
+
+    sornament10 = sornament.clone()
+    sornament10.move(250,-500)
+    sornament10.draw(win)
+
+main()
