@@ -7,7 +7,7 @@ from graphics import *
 def main():
 
     #Create window description
-    win = GraphWin("Eric's Picture", 1000, 1000)
+    win = GraphWin("Eric's Picture", 500, 500)
     win.setCoords(0,0,1000,1000)
     win.setBackground("aqua")
 
@@ -183,7 +183,7 @@ def main():
     cornament9.draw(win)
 
     #top-left red square ornament on tree (Left, Right, Top, Bottom)
-    sornament = Polygon(Point(685,650),Point(715,650),Point(700,670),Point(700,630))
+    sornament = Polygon(Point(685,650),Point(700,665),Point(715,650),Point(700,635))
     sornament.setFill("red")
     sornament.setOutline("red")
     sornament.draw(win)
