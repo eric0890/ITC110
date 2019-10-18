@@ -7,8 +7,7 @@ from graphics import *
 def main():
 
     #Create window description
-    
-    win = GraphWin("Eric's Picture")
+    win = GraphWin("Eric's Picture, 1000, 1000")
     win.setCoords(0,0,1000,1000)
     win.setBackground("aqua")
 
