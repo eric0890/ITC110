@@ -1,0 +1,15 @@
+#HW5
+#Program to count the numbers of words of a user input sentence
+#Created by Eric Ontiveros
+
+def main():
+
+    print("Word Counter Program")
+    
+    Phrase = input("\nEnter a phrase: ")
+
+    MyList = Phrase.split()
+    
+    print("Number of words:", len(MyList))
+
+main()
