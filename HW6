@@ -1,0 +1,19 @@
+#HW6.py
+#Program builds acronym
+#By Eric Ontiveros
+
+def main():
+    print("This program builds acronyms")
+
+    Phrase = input("\nEnter a phrase: ")
+
+    Split = Phrase.split()
+
+    Letter = ""
+
+    for i in Split:
+        Letter = Letter + i[0].upper()
+
+    print("The acronym is:", Letter)
+
+main()
