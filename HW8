@@ -1,0 +1,21 @@
+#HW8.py
+#This program gives wages based on hours worked + OT
+#By Eric Ontiveros
+
+def main():
+
+    print("This program will show you wages based on hours worked")
+
+    wage = int(input("\nEnter hourly wage here: "))
+    hours = int(input("Enter hours worked here: "))
+
+    regular = str(int((wage * hours)))
+    overtime = str(int((40*wage) + ((hours - 40) * wage * 1.5)))
+
+    if hours > 40:
+        print("\nThis week you will earn $" + overtime)
+        
+    else:
+        print("\nThis week you will earn $" + regular)
+
+main()
