@@ -1,4 +1,4 @@
-#HW7
+#HW7.py
 #This program produces 3 differently sized circles
 #By Eric Ontiveros
 
@@ -24,6 +24,5 @@ def shapes(centerx, centery, radius):
     circ.setOutline("black")
     circ.setFill("yellow")
     circ.draw(win)
-
 
 main()
