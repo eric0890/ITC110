@@ -6,8 +6,8 @@ def main():
 
     print("This program will show you wages based on hours worked")
 
-    wage = int(input("\nEnter hourly wage here: "))
-    hours = int(input("Enter hours worked here: "))
+    wage = int(input("\nWhat is your hourly wage? "))
+    hours = int(input("How many hours did you work? "))
 
     regular = str(int((wage * hours)))
     overtime = str(int((40*wage) + ((hours - 40) * wage * 1.5)))
