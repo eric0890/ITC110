@@ -12,10 +12,10 @@ def main():
     regular = str(int((wage * hours)))
     overtime = str(int((40*wage) + ((hours - 40) * wage * 1.5)))
 
-    if hours > 40:
-        print("\nThis week you will earn $" + overtime)
+    if hours <= 40:
+        print("\nThis week you will earn $" + regular + ".")
         
     else:
-        print("\nThis week you will earn $" + regular)
+        print("\nThis week you will earn $" + overtime + ".")
 
 main()
